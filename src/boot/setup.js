@@ -5,6 +5,8 @@ import { StyleProvider } from "native-base";
 import App from "../navigation/appNavigation";
 import getTheme from "../theme/components";
 import variables from "../theme/variables/commonColor";
+import constants from "../constants/Constants";
+import ApiUtils from "../Utils/ApiUtils";
 
 export default class Setup extends Component {
   constructor() {
@@ -28,6 +30,7 @@ export default class Setup extends Component {
         this.props.navigation.navigate(userToken ? 'Auth' : 'App');
     };
 
+
   async loadFonts() {
     await Expo.Font.loadAsync({
       Roboto: require("native-base/Fonts/Roboto.ttf"),
@@ -44,6 +47,7 @@ export default class Setup extends Component {
       <StyleProvider style={getTheme(variables)}>
             <App/>
       </StyleProvider>
+
     );
   }
 }

@@ -8,6 +8,16 @@
       "ios",
       "android"
     ],
+    "ios": {
+      "bundleIdentifier": "com.capstone.barbershop"
+    },
+    "android": {
+      "package": "com.capstone.barbershop",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBzswneGFFYdWrmJU2ndjVf3_0llF3pymA" }
+      }
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -7,19 +7,27 @@ import {
     Title,
     Content,
     Thumbnail,
-    Text
+    Text,
 } from "native-base";
 import styles from "./styles";
+import CustomFooter from '../../Component/CustomeFooter';
 
 const avatar = require("../../assets/images/avatar.jpg");
 
 export default class Home extends Component {
     constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+        tab1: true,
+        tab2: false,
+        tab3: false,
+        tab4: false
+    }
+    
 }
 
     render() {
+        const {...props} = this.props;
         return (
             <Container style={styles.container}>
 
@@ -36,6 +44,8 @@ export default class Home extends Component {
                 <Content padder>
                     <Text>News span here</Text>
                 </Content>
+
+                <CustomFooter link {...props} />
             </Container>
         );
     }

@@ -6,7 +6,7 @@ import {
 import styles from "./styles";
 
 
-export default class Login extends Component {
+export default class News extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -15,7 +15,7 @@ export default class Login extends Component {
     render() {
         return (
             <Container style={styles.container}>
-                    <Text>Login screen</Text>
+                    <Text>News screen</Text>
             </Container>
         );
     }
